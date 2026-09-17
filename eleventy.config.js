@@ -1,5 +1,4 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
@@ -24,7 +23,6 @@ export default async function(eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
 		.addPassthroughCopy({ "./public/": "/", })
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
 		.addPassthroughCopy({ './robots.txt': '/robots.txt', })
 		.addPassthroughCopy("./fonts/Feroniapi-MediumItalic.woff2")
 		.addPassthroughCopy({ "./media/favicon.jpg": "/" });
@@ -63,30 +61,6 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
 
-	eleventyConfig.addPlugin(feedPlugin, {
-        type: "atom", // or "rss", "json"
-        outputPath: "feed/feed.xml", // Changed from "/feed/feed.xml"
-        stylesheet: "pretty-atom-feed.xsl",
-        templateData: {
-            eleventyNavigation: {
-                key: "RSS",
-                order: 4
-            }
-        },
-        collection: {
-            name: "posts",
-            limit: 10,
-        },
-        metadata: {
-            language: "en",
-            title: "Blogging for the Soul",
-            subtitle: "A course at New Stadium on blogging.",
-            base: "https://example.com/",
-            author: {
-                name: "Tiana"
-            }
-        }
-    });
 
 
 

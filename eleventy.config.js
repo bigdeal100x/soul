@@ -62,30 +62,34 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
+
 	eleventyConfig.addPlugin(feedPlugin, {
-		type: "atom", // or "rss", "json"
-		outputPath: "/feed/feed.xml",
-		stylesheet: "pretty-atom-feed.xsl",
-		templateData: {
-			eleventyNavigation: {
-				key: "RSS",
-				order: 4
-			}
-		},
-		collection: {
-			name: "posts",
-			limit: 10,
-		},
-		metadata: {
-			language: "en",
-			title: "Blogging for the Soul",
-			subtitle: "A course at New Stadium on blogging.",
-			base: "https://example.com/",
-			author: {
-				name: "Tiana"
-			}
-		}
-	});
+        type: "atom", // or "rss", "json"
+        outputPath: "feed/feed.xml", // Changed from "/feed/feed.xml"
+        stylesheet: "pretty-atom-feed.xsl",
+        templateData: {
+            eleventyNavigation: {
+                key: "RSS",
+                order: 4
+            }
+        },
+        collection: {
+            name: "posts",
+            limit: 10,
+        },
+        metadata: {
+            language: "en",
+            title: "Blogging for the Soul",
+            subtitle: "A course at New Stadium on blogging.",
+            base: "https://example.com/",
+            author: {
+                name: "Tiana"
+            }
+        }
+    });
+
+
+
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {

@@ -5,7 +5,7 @@ date: 2026-08-30
 day: Day 1
 tags: ["day 1", "history"]
 heroImage: "./assets/El_Gato.jpg"
-draft : true
+draft : false
 ---
 
 <img src="/assets/El_Gato.jpg" alt="A cat with books and a desktop computer, pondering his next blog post."/>

@@ -1,7 +1,7 @@
 ---
 title: Day 1c | Homework
 description: What to work on.
-date: 2026-08-30
+date: 2026-09-17
 day: Day 1
 tags: ["day 1", "homework"]
 heroImage: "./assets/catkeyboard.jpg"

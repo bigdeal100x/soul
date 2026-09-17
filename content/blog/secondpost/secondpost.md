@@ -1,7 +1,7 @@
 ---
 title: Day 1b | History of Blogging
 description: How it all began and how it's changed.
-date: 2026-08-30
+date: 2026-09-16
 day: Day 1
 tags: ["day 1", "history"]
 heroImage: "./assets/El_Gato.jpg"

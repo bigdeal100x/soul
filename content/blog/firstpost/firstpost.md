@@ -1,7 +1,7 @@
 ---
 title: Day 1a | Setting Up Your Blog
 description: How to make a blog with 11ty & Netlify
-date: 2026-08-29
+date: 2026-09-15
 day: Day 1
 tags: ["day 1", "setting up"]
 heroImage: "./assets/Dreysaczens_Antivir.jpg"

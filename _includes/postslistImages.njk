@@ -1,0 +1,25 @@
+
+{%- for post in postslist | reverse %}
+
+<div  class="postlinks-imagegrid">
+
+		<div class="postlinks-info">
+			<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+			<p class="postlist-date">{{ post.data.description }} | <time datetime="{{ post.date | htmlDateString }}"> {{ post.date | readableDate("LLLL yyyy") }}</time></p>
+		</div>
+
+		<div class="postlist-imageBox">
+		{% if post.data.heroImage %}
+			<a href="{{ post.url }}">
+			<img
+				src="{{ post.data.heroImage }}"
+				alt="{{ post.data.title }}"
+				class="postlist-image"
+			>
+			</a>
+		{% endif %}
+		</div>
+
+</div>
+
+{%- endfor %}

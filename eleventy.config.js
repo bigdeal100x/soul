@@ -128,7 +128,12 @@ export default async function(eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	
+	
 };
+
+
+
 
 export const config = {
 	// Control which files Eleventy will process
@@ -167,4 +172,6 @@ export const config = {
 	// folder name and does **not** affect where things go in the output folder.
 
 	// pathPrefix: "/",
+
 };
+

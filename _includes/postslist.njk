@@ -1,8 +1,7 @@
-
 {%- for post in postslist | reverse %}
 
 		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<p class="postlist-date">{{ post.data.description }} | <time datetime="{{ post.date | htmlDateString }}"> {{ post.date | readableDate("LLLL yyyy") }}</time></p>
+		<p class="postlist-date">{{ post.data.description }} <!--| <time datetime="{{ post.date | htmlDateString }}"> {{ post.date | readableDate("LLLL yyyy") }}</time>--></p>
 
 		<hr style="margin-bottom: 15px;">
 

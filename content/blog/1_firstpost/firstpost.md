@@ -1,5 +1,5 @@
 ---
-title: Day 1 | Setting Up Your Blog
+title: Day 1a | Setting Up Your Blog
 description: How to make a blog with 11ty & Netlify
 date: 2026-08-29
 day: Day 1
@@ -12,6 +12,8 @@ draft : false
 
 
 Let's set up this blog!
+We're using 11ty and Netlify to build a static site that allows us to play with templates, which is nice when developing a blog.
+I like it because it feels like the next step up from just a simple HTML/CSS site.
 
 
 - Edit <code>_data/metadata.js</code> with your blog’s information.

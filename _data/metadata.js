@@ -4,7 +4,6 @@ export default {
 	language: "en",
 	description: "How to get into blogging by hand.",
 	author: {
-		name: "Tiana",
-		url: "https://tiana.computer/"
+		name: "Este;;e",
 	}
 }

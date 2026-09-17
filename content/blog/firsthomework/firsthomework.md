@@ -68,4 +68,3 @@ Knowing how to break down your ideas/challenges/bugs into essential steps is key
 - [VS Code Docs](https://code.visualstudio.com/docs)
 - [Codecademy](https://www.codecademy.com/) | Free coding modules
 
----
